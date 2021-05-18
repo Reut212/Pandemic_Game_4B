@@ -108,5 +108,5 @@ namespace pandemic{
         {Tokyo, "Tokyo"},
         {Washington, "Washington"}
     };
-    // credit : https://stackoverflow.com/questions/5093460/how-to-convert-an-enum-type-variable-to-a-string
+    // credit for the inline : https://stackoverflow.com/questions/5093460/how-to-convert-an-enum-type-variable-to-a-string
 }
