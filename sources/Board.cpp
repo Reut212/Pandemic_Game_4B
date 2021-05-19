@@ -6,7 +6,7 @@ using namespace std;
 using namespace pandemic;
 
 Board::Board(){
-        // readFile();
+         readFile();
 }   
 
 void Board::readFile(){
@@ -25,9 +25,9 @@ void Board::readFile(){
 
                 cubes[stringNum.at(cit)]=0;
                 while(iss >> neighbour){
-                        cities[stringNum.at(cit)].insert(stringNum.at(neighbour));
+                        nei.insert(stringNum.at(neighbour));
                 }
-
+                cities[stringNum.at(cit)] = nei;
         }
 }
 //put disease cubes in a specific city
