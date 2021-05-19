@@ -1,11 +1,35 @@
 #include "Board.hpp"
+#include <fstream>
+#include <sstream>
 
 using namespace std;
 using namespace pandemic;
 
 Board::Board(){
+        // readFile();
 }   
 
+void Board::readFile(){
+        ifstream f ("/cities_map.txt");
+        string line;
+        string cit;
+        string col;
+        string neighbour;
+
+        while(getline(f, line)){
+
+                istringstream iss(line);
+                set <City> nei;
+                iss >> cit;
+                iss >> col;
+
+                cubes[stringNum.at(cit)]=0;
+                while(iss >> neighbour){
+                        cities[stringNum.at(cit)].insert(stringNum.at(neighbour));
+                }
+
+        }
+}
 //put disease cubes in a specific city
 int& Board::operator[] (City c){
         return cubes[c]; 
