@@ -108,5 +108,29 @@ namespace pandemic{
         {Tokyo, "Tokyo"},
         {Washington, "Washington"}
     };
-    // credit for the inline : https://stackoverflow.com/questions/5093460/how-to-convert-an-enum-type-variable-to-a-string
+
+    inline map<string, City> stringNum{ 
+        {"Algiers",Algiers},
+        {"Atlanta", Atlanta},
+        {"Baghdad", Baghdad}, {"Bangkok", Bangkok},
+        {"Beijing", Beijing}, {"Beijing", Beijing},
+        {"Bogota", Bogota}, {"BuenosAires", BuenosAires},
+        {"Cairo", Cairo}, {"Chennai", Chennai},
+        {"Chicago", Chicago}, {"Delhi", Delhi},
+        {"Essen", Essen}, {"HoChiMinhCity", HoChiMinhCity},
+        {"HongKong", HongKong}, {"Istanbul", Istanbul},
+        {"Jakarta", Jakarta}, {"Johannesburg", Johannesburg},
+        {"Karachi", Karachi}, {"Khartoum", Khartoum},
+        {"Kinshasa", Kinshasa}, {"Kolkata", Kolkata},
+        {"Lagos", Lagos}, {"Lima", Lima}, {"London", London},
+        {"LosAngeles", LosAngeles}, {"Madrid", Madrid},
+        {"Manila", Manila}, {"MexicoCity", MexicoCity},
+        {"Miami", Miami}, {"Milan", Milan}, {"Montreal", Montreal},
+        {"Moscow", Moscow}, {"Mumbai", Mumbai}, {"NewYork", NewYork},
+        {"Osaka", Osaka}, {"Paris", Paris}, {"Riyadh", Riyadh},
+        {"SanFrancisco", SanFrancisco}, {"Santiago", Santiago},
+        {"SaoPaulo", SaoPaulo}, {"Seoul", Seoul}, {"Shanghai", Shanghai},
+        {"StPetersburg", StPetersburg}, {"Sydney", Sydney}, {"Taipei", Taipei},
+        {"Tehran", Tehran}, {"Tokyo", Tokyo}, {"Washington", Washington}
+    };
 }
