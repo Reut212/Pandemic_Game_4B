@@ -10,15 +10,10 @@ using namespace std;
 namespace pandemic{
 
     class Board{
-        
-            static map<City, set<City>> cities;
-            set<City> rSCities;
-            map<City, int> cubes;
-            set<Color> cures;
 
         public:
         Board(); //Initialize a new board
-
+        void readFile();
         int& operator[](City c); //put disease cubes in a specific city
         bool is_clean() const ; //check if there is disease cubes on the board
         void remove_cures(); //remove all mediciens from the board
@@ -30,5 +25,11 @@ namespace pandemic{
         static bool neiCity(const City& a, const City& b); //return if those coties are neighbours
         int numOfCubesInCity(City a); //check how much deasise cubes in a specific city
         friend ostream& operator<<(ostream& out, Board const& b); //print board
+        
+        private:
+        static map<City, set<City>> cities;
+        set<City> rSCities;
+        map<City, int> cubes;
+        set<Color> cures;  
     };
 }
